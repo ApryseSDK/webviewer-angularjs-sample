@@ -1,0 +1,26 @@
+{
+  "name": "webviewer-angularjs-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run server\" \"npm run open-browser\"",
+    "server": "./node_modules/.bin/supervisor -k -e html,js -i .git/,node_modules/ -- server.js",
+    "open-browser": "node open-browser.js",
+    "postinstall": "npm run download-webviewer",
+    "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation app/lib"
+  },
+  "devDependencies": {
+    "body-parser": "1.18.3",
+    "concurrently": "^4.1.2",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "opn": "^5.3.0",
+    "reload": "^3.0.1",
+    "supervisor": "0.12.0",
+    "@pdftron/webviewer-downloader": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "PDFTron Systems Inc."
+}

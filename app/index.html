@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+    <script src='lib/webviewer.min.js'></script>
+  </head>
+  <body>
+    <div ng-controller="MyApp">
+      {{message}}
+      <webviewer></webviewer>
+    </div>
+    <!-- https://www.npmjs.com/package/reload#using-reload-in-express -->
+    <script src="/reload/reload.js"></script>
+  </body>
+</html>
