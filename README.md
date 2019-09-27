@@ -32,13 +32,13 @@ See [API documentation](https://www.pdftron.com/documentation/web/guides/ui/apis
 
 ## Enabling full API
 
-PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in webviewer.component.ts:
+PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in components.js:
 
-```
+```diff
 WebViewer({
   path: 'lib', // path to the PDFTron 'lib' folder on your server
   initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf',
-  fullAPI: true
++  fullAPI: true
 }, document.getElementById('viewer'))
 ```
 
