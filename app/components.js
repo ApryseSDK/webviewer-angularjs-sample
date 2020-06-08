@@ -9,7 +9,7 @@ angular.module('components', [])
         WebViewer({
           path: 'lib', // path to the PDFTron 'lib' folder on your server
           // licenseKey: 'Insert commercial license key here after purchase',
-          initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf',
+          initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf',
           // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
         }, document.getElementById('viewer'))
         .then(function(instance) {
@@ -29,7 +29,7 @@ angular.module('components', [])
           });
         });
       },
-      template: "<div id='viewer' style='width: 1024px; height: 600px; margin: 0 auto;'></div>",
+      template: "<div id='viewer' style='width: 100%; height: 100%; margin: 0 auto;'></div>",
       replace: true
     };
   })

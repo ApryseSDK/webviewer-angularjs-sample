@@ -5,13 +5,11 @@
     <script src="components.js"></script>
     <script src="app.js"></script>
     <script src='lib/webviewer.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <div ng-controller="MyApp">
-      {{message}}
+    <div ng-controller="MyApp" id="myapp">
       <webviewer></webviewer>
     </div>
-    <!-- https://www.npmjs.com/package/reload#using-reload-in-express -->
-    <script src="/reload/reload.js"></script>
   </body>
 </html>
