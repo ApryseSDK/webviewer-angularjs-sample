@@ -8,7 +8,7 @@
     "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation app/lib"
   },
   "devDependencies": {
-    "body-parser": "1.18.3",
+    "body-parser": "1.20.3",
     "express": "^4.16.3",
     "morgan": "^1.9.1",
     "opn": "^5.3.0",
