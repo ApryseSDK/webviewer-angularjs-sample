@@ -12,22 +12,23 @@ angular.module('components', [])
           initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf',
           // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
         }, document.getElementById('viewer'))
-        .then(function(instance) {
-          var docViewer = instance.docViewer;
-          var annotManager = instance.annotManager;
-          // call methods from instance, docViewer and annotManager as needed
+          .then(function(instance) {
+            var docViewer = instance.Core.documentViewer;
+            var annotManager = instance.Core.annotationManager;
+            // call methods from instance, docViewer and annotManager as needed
 
-          // you can also access major namespaces from the instance as follows:
-          // var Tools = instance.Tools;
-          // var Annotations = instance.Annotations;
+            // you can also access major namespaces from the instance as follows:
+            var Tools = instance.Core.Tools;
+            var Annotations = instance.Core.Annotations;
 
-          // change to dark theme
-          instance.setTheme('dark');
+            // change to dark theme
+            instance.UI.setTheme('dark');
 
-          docViewer.on('documentLoaded', function() {
             // call methods relating to the loaded document
+            docViewer.addEventListener('documentLoaded', function () {
+              console.log("Document is loaded.");
+            });
           });
-        });
       },
       template: "<div id='viewer' style='width: 100%; height: 100%; margin: 0 auto;'></div>",
       replace: true

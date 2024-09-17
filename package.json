@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npm run server",
-    "server": "./node_modules/.bin/supervisor -k -e html,js -i .git/,node_modules/ -- server.js",
+    "server": "node_modules\\.bin\\supervisor -k -e html,js -i .git/,node_modules/ -- server.js",
     "postinstall": "npm run download-webviewer",
     "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation app/lib"
   },
   "devDependencies": {
-    "body-parser": "1.18.3",
-    "express": "^4.16.3",
+    "@pdftron/webviewer-downloader": "^1.4.2",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
     "morgan": "^1.9.1",
-    "opn": "^5.3.0",
-    "supervisor": "0.12.0",
-    "@pdftron/webviewer-downloader": "^1.1.0"
+    "opn": "^6.0.0",
+    "supervisor": "0.12.0"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "PDFTron Systems Inc."
+  "author": "PDFTron Systems Inc.",
+  "dependencies": {
+    "npm": "^10.8.3"
+  }
 }
