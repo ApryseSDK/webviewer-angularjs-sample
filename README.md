@@ -13,7 +13,7 @@ Before you begin, make sure your development environment includes:
 1. [Node.js](https://nodejs.org/en).
 2. IDE used in this sample is Visual Studio Code.
 3. [GitHub command line](https://github.com/git-guides/install-git) `git`.
-4. Angular CLI: `npm install -g @angular/cli`. If an unsupported engine message appears, make sure to install a compatible NodeJS versions.
+4. Angular CLI: `npm install -g @angular/cli`. If an unsupported engine message appears, make sure to install a compatible NodeJS version.
 
 ## Install
 
