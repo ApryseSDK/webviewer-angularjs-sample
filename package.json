@@ -1,23 +1,23 @@
 {
   "name": "webviewer-angularjs-sample",
   "version": "1.0.0",
+  "description": "Apryse WebViewer",
   "scripts": {
     "start": "npm run server",
     "server": "./node_modules/.bin/supervisor -k -e html,js -i .git/,node_modules/ -- server.js",
-    "postinstall": "npm run download-webviewer",
-    "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation app/lib"
+    "postinstall": "node tools/copy-webviewer-files.js"
   },
   "devDependencies": {
     "body-parser": "1.18.3",
     "express": "^4.16.3",
     "morgan": "^1.9.1",
-    "opn": "^5.3.0",
     "supervisor": "0.12.0",
-    "@pdftron/webviewer-downloader": "^1.1.0"
+    "fs-extra": "^9.0.0",
+    "@pdftron/webviewer": "^11.0.0"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "PDFTron Systems Inc."
+  "author": "Apryse Software Inc."
 }

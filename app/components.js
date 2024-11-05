@@ -13,18 +13,18 @@ angular.module('components', [])
           // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
         }, document.getElementById('viewer'))
         .then(function(instance) {
-          var docViewer = instance.docViewer;
-          var annotManager = instance.annotManager;
+          const docViewer = instance.Core.documentViewer;
+          const annotManager = instance.Core.annotationManager;
           // call methods from instance, docViewer and annotManager as needed
 
           // you can also access major namespaces from the instance as follows:
-          // var Tools = instance.Tools;
-          // var Annotations = instance.Annotations;
+          // const Tools = instance.Core.Tools;
+          // const Annotations = instance.Core.Annotations;
 
           // change to dark theme
-          instance.setTheme('dark');
+          instance.UI.setTheme('dark');
 
-          docViewer.on('documentLoaded', function() {
+          docViewer.addEventListener('documentLoaded', function() {
             // call methods relating to the loaded document
           });
         });
