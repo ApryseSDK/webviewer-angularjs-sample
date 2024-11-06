@@ -8,11 +8,11 @@
     "postinstall": "node tools/copy-webviewer-files.js"
   },
   "devDependencies": {
-    "body-parser": "1.18.3",
-    "express": "^4.16.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
     "morgan": "^1.9.1",
     "supervisor": "0.12.0",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^11.2.0",
     "@pdftron/webviewer": "^11.0.0"
   },
   "repository": {
