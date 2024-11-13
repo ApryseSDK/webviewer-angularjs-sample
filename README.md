@@ -1,6 +1,6 @@
 # WebViewer - AngularJS sample
 
-[WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that is part of the [Apryse SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate, and manipulate PDFs that can be embedded into any web project.
+[WebViewer](https://apryse.com/products/webviewer) is a powerful JavaScript-based PDF Library that is part of the [Apryse SDK](https://apryse.com/). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate, and manipulate PDFs that can be embedded into any web project.
 
 ![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
 
@@ -33,7 +33,7 @@ Navigate to `http://localhost:3000/`. The app will automatically reload if you c
 
 ## Enabling full API
 
-Webviewer Full API is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in components.js:
+WebViewer Full API is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in components.js:
 
 ```diff
 WebViewer({
